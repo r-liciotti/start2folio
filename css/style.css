@@ -53,7 +53,7 @@ a#home img{
 
 .panel {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     min-height: 100%;
     overflow: hidden;
 }
