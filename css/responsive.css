@@ -1,0 +1,50 @@
+/* Schermi grandi o ad alta risoluzione */
+@media all and (max-width: 1690px) { ... }
+
+/* Schermi Desktop o Portatili */
+@media all and (min-width: 1280px) and (max-width: 1689px) { ... }
+
+/* Tablet in modalità orizzontale */
+@media all and (min-width: 737px) and (max-width: 1279px) { ... }
+
+/* Tablet in modalità verticale */
+@media all and (min-width: 481px) and (max-width: 736px) { ... }
+
+/* Smartphone o piccoli Tablet */
+@media all and (max-width: 480px) {
+  /* HOME */
+  #pagepiling h1 {
+      font-size: 2.3rem;
+  }
+  .top div h1, .top h4, .top .btn-outline-primary {
+    font-size: 1.3rem;
+}
+.btn {
+    border-width: 2.3px;
+    font-size: 1.4rem;
+}
+
+  /* /HOME */
+
+
+/* SKILL */
+#skill .h2, h2 {
+    font-size: 1.3rem;
+}
+
+#skill .progress {
+  width: 85px;
+  height: 85px;
+}
+/* /SKILL */
+
+
+
+/* EMAIL */
+#contact .email {
+    width: 350px;
+    height: 240px;
+
+}
+/* /EMAIL */
+ }

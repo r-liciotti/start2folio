@@ -3,19 +3,20 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
-  <!-- <link rel="stylesheet" href="css/bootstrap-grid.css"> -->
+  <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/jquery.pagepiling.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
-  <a id="home" data-menuanchor="pagepiling" href="#pagepiling"><img src="images/home.png" alt=""></a>
+  <a id="home" class="shadow" data-menuanchor="pagepiling" href="#pagepiling"><img src="images/home.png" alt=""></a>
 
   <div id="pagepiling" class="container-fluid m-0 p-0">
 
@@ -28,7 +29,6 @@
             <div class="">
               <a data-menuanchor="about" class="btn btn-outline-primary" href="#about" role="button">About Me</a>
               <a data-menuanchor="skill" class="btn btn-outline-primary" href="#skill" role="button">Skills</a>
-              <a data-menuanchor="work" class="btn btn-outline-primary" href="#work" role="button">Works</a>
               <a data-menuanchor="contact" class="btn btn-outline-primary" href="#contact" role="button">Contact Me</a>
             </div>
 
@@ -42,7 +42,6 @@
             <div class="">
               <a data-menuanchor="about" class="btn btn-outline-primary" href="#about" role="button">About Me</a>
               <a data-menuanchor="skill" class="btn btn-outline-primary" href="#skill" role="button">Skills</a>
-              <a data-menuanchor="work" class="btn btn-outline-primary" href="#work" role="button">Works</a>
               <a data-menuanchor="contact" class="btn btn-outline-primary" href="#contact" role="button">Contact Me</a>
             </div>
           </div>
@@ -55,7 +54,7 @@
     <div id="about" class="section pp-scrollable">
       <div class="container py-5">
         <div class="row">
-          <div class="col-lg-7 mx-auto">
+          <div class="col-7 col-sm-7 col-lg-7 mx-auto">
 
             <!-- Timeline -->
             <ul class="timeline">
@@ -77,28 +76,27 @@
               </li>
               <li class="timeline-item bg-white rounded ml-3 p-4 shadow">
                 <div class="timeline-arrow"></div>
-                <h2 class="h5 mb-0">Now</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
-                <p class="text-small mt-2 font-weight-light">Adesso...Start2Impact!</p>
+                <h2 class="h5 mb-0">Now...</h2><span class="small text-gray"><i class="fa fa-clock-o mr-1"></i>10 October, 2019</span>
+                <p class="text-small mt-2 font-weight-light">...Start2Impact!</p>
                 <!-- <p class="text-small mt-2 font-weight-light">V\</p> -->
               </li>
             </ul><!-- End -->
 
           </div>
-          <div class="col-lg-5 mx-auto">
-            <span class="display-1">A</span>
-            <span class="">mo mettermi in gioco, prendere decisione, ragionare, risovlere problemi.</span>
+          <div class="col-5 col-sm-5 col-lg-5 mx-auto">
+            <span class="display-1">L</span>
+            <span class="">orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 
           </div>
         </div>
       </div>
-
-
     </div>
-    <div id="skill" class="section text-center">
+
+    <div id="skill" class="section pp-scrollable text-center">
       <h1>Skills</h1>
       <div class="container">
         <div class="row">
-          <div class="col-xl-3 col-lg-6 mb-4">
+          <div class="col-6 col-sm-6  col-xl-3 col-lg-6  mb-4">
             <div class="bg-white rounded-lg p-5 shadow">
               <h2 class="h6 font-weight-bold text-center mb-4">PHP</h2>
               <div class="progress mx-auto" data-value='60'>
@@ -114,7 +112,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="col-6 col-sm-6  col-xl-3 col-lg-6  mb-4">
             <div class="bg-white rounded-lg p-5 shadow">
               <h2 class="h6 font-weight-bold text-center mb-4">HTML</h2>
               <div class="progress mx-auto" data-value='100'>
@@ -130,7 +128,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-6 mb-4">
+          <div class="col-6 col-sm-6  col-xl-3 col-lg-6  mb-4">
             <div class="bg-white rounded-lg p-5 shadow">
               <h2 class="h6 font-weight-bold text-center mb-4">CSS</h2>
               <div class="progress mx-auto" data-value='75'>
@@ -146,7 +144,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-3 col-lg-6 mb-4">
+        <div class="col-6 col-sm-6  col-xl-3 col-lg-6  mb-4">
             <div class="bg-white rounded-lg p-5 shadow">
               <h2 class="h6 font-weight-bold text-center mb-4">JavaScript</h2>
 
@@ -166,185 +164,94 @@
         </div>
 
 
-        <div class="carousel slide" data-ride="carousel" id="postsCarousel">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12 text-md-right lead">
-                <a class="btn btn-outline-secondary prev" href="" title="go back"><i class="fa fa-lg fa-chevron-left"></i></a>
-                <a class="btn btn-outline-secondary next" href="" title="more"><i class="fa fa-lg fa-chevron-right"></i></a>
-              </div>
+
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card-deck">
+          <div class="card shadow">
+            <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #1</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
             </div>
           </div>
-          <div class="container p-t-0 m-t-2 carousel-inner">
-            <div class="row row-equal carousel-item active m-t-0">
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <div class="card-img-top card-img-top-250">
-                    <img class="img-fluid" src="http://i.imgur.com/EW5FgJM.png" alt="Carousel 1">
-                  </div>
-                  <div class="card-block p-t-2">
-                    <h6 class="small text-wide p-b-2">Insight</h6>
-                    <h2>
-                      <a href>Why Stuff Happens Every Year.</a>
-                    </h2>
-                  </div>
-                </div>
-              </div>
+          <div class="card shadow">
+              <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #2</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 
+            </div>
+          </div>
+          <div class="card shadow">
+              <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
 
             </div>
           </div>
         </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card-deck">
+          <div class="card shadow">
+              <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #1</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+            </div>
+          </div>
+          <div class="card shadow">
+              <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #2</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+
+            </div>
+          </div>
+          <div class="card shadow">
+              <img src="images/img_work.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Work #3</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+
+            </div>
+          </div>
+        </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+    </div>
       </div>
 
-    </div>
 
-
-    <div id="work" class="section">
-      <div class="container card-columns">
-        <div class="card">
-          <img src="images/work.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title that wraps to a new line</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-        <div class="card p-3">
-          <blockquote class="blockquote mb-0 card-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <img src="images/work.jpeg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card bg-primary text-white text-center p-3">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-            <footer class="blockquote-footer text-white">
-              <small>
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card text-center">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/work.jpeg" class="card-img-top" alt="...">
-        </div>
-        <div class="card p-3 text-right">
-          <blockquote class="blockquote mb-0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">
-              <small class="text-muted">
-                Someone famous in <cite title="Source Title">Source Title</cite>
-              </small>
-            </footer>
-          </blockquote>
-        </div>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div id="contact" class="section">
       <div class="email shadow">
         <span>Email</span>
-        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+        <input type="text" class="form-control" placeholder="example@example.com" aria-label="example@example.com">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Invia</button>
       </div>
     </div>
-
+<!-- /pagepiling -->
   </div>
 
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="js/bootstrap.min.js" charset="utf-8"></script>
   <script src="js/bootstrap.bundle.min.js" charset="utf-8"></script>

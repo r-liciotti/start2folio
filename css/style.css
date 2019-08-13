@@ -15,6 +15,18 @@ body {
   border-width: 2.3px;
   font-size: 2rem;
 }
+
+.top .btn-outline-primary:hover {
+    color: rgb(255, 241, 78);
+    background-color: white;
+    border-color: white;
+}
+.bottom .btn-outline-primary:hover {
+    color: white;
+    background-color: rgb(255, 241, 78);;
+    border-color: rgb(255, 241, 78);;
+}
+
 a#home{
   background-color: white;
 border-radius: 35px;
@@ -76,22 +88,31 @@ a#home img{
 
 
 .bottom {
-    background-color: rgb(44, 44, 44);
+    background-color: rgb(255, 255, 255);
     z-index: 1;
 }
 
+.bottom div h1, .bottom h4, .bottom .btn-outline-primary {
+    color: #fff14e;
+    border-color: #fff14e;
+    }
+.bottm
     .bottom .description {
         right: 5%;
     }
 
 .top {
-    background-color: rgb(77, 69, 173);
+    background-color: rgb(255, 241, 78);
     z-index: 2;
     width: 50vw;
 
     /*-webkit-clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);
     clip-path: polygon(60% 0, 100% 0, 100% 100%, 40% 100%);*/
 }
+.top div h1,.top h4, .top  .btn-outline-primary {
+    color: white;
+    border-color: white;
+    }
 
     .top .description {
         left: 5%;
@@ -211,8 +232,8 @@ li.timeline-item::before {
 /*  */
 
 
-#about{
-  background-color: black;
+#about {
+    background-color: #fff14e;
 }
 
 
@@ -223,7 +244,7 @@ li.timeline-item::before {
 /* skill */
 
 #skill{
-  background-color: white;
+  background-color: #fff14e;
   height: 100%;
 }
 
@@ -341,6 +362,7 @@ li.timeline-item::before {
 
 #contact{
   height: 100%;
+  background-color: #fff14e;
 }
 #contact .email{
   padding-top: 60px;
@@ -349,7 +371,7 @@ text-align: center;
 width: 400px;
 height: 300px;
 border-radius: 5px;
-
+background-color: white;
 }
 
 .email input{
@@ -361,6 +383,12 @@ border-radius: 5px;
   border-width: 1.5px;
     font-size: 1.7rem;
     margin-top: 20px;
+    color: white;
+    background-color: rgb(255, 241, 78);
+    border-color: rgb(255, 241, 78);
+}
+.email .btn:hover{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.20);
 }
 
 

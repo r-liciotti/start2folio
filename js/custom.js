@@ -24,8 +24,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 $(document).ready(function() {
+  $('.carousel').carousel(),
+
 	$('#pagepiling').pagepiling({
-    anchors: ['pagepiling', 'about', 'skill', 'work', 'contact'],
+     anchors: [ 'pagepiling','about', 'skill', 'contact'],
+    navigation: {
+            'textColor': '#000',
+            'bulletsColor': '#000',
+            'position': 'right',
+            'tooltips': ['Home','About', 'Skill', 'Contact']
+        },
+        afterLoad: function(anchorLink, index){
+		if(anchorLink == 'skill'){
+      $(".progress").each(function() {
+
+  var value = $(this).attr('data-value');
+  var left = $(this).find('.progress-left .progress-bar');
+  var right = $(this).find('.progress-right .progress-bar');
+
+  if (value > 0) {
+    if (value <= 50) {
+      right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+    } else {
+      right.css('transform', 'rotate(180deg)')
+      left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+    }
+  }
+
+})
+
+function percentageToDegrees(percentage) {
+
+  return percentage / 100 * 360
+
+}
+			}
+		}
 
   });
   // manual carousel controls
